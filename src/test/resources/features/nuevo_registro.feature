@@ -14,5 +14,5 @@ Feature:Prueba
 
     Examples: Tabla Registro
     |nombre|correo|password|mensaje|
-    |Reto siste|retosistecredito4@mailsac.com|Asdf1234|¡Revisa tu correo electrónico!|
+    |Reto siste|retosistecredito6@mailsac.com|Asdf1234|¡Revisa tu correo electrónico!|
 
