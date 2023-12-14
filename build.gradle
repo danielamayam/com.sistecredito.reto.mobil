@@ -1,0 +1,31 @@
+plugins {
+    id "net.serenity-bdd.serenity-gradle-plugin" version "4.0.27"
+    id 'java'
+    id 'idea'
+}
+
+ext {
+    serenityCoreVersion = '4.0.28'
+    appiumVersion = '8.5.1'
+    junitVersion = '5.10.0'
+    slf4jVersion='2.0.6'
+}
+
+repositories {
+    mavenCentral()
+}
+
+defaultTasks 'clean','test','aggregate'
+
+dependencies {
+    implementation "net.serenity-bdd:serenity-cucumber:${serenityCoreVersion}"
+    testImplementation "net.serenity-bdd:serenity-ensure:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-core:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-junit:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-screenplay:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-cucumber:${serenityCoreVersion}",
+            "io.appium:java-client:9.0.0",
+            "org.junit.jupiter:junit-jupiter-api:${junitVersion}",
+            "org.slf4j:slf4j-simple:${slf4jVersion}"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+}
