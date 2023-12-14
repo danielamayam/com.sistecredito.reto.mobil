@@ -1,4 +1,4 @@
-Feature:Prueba
+Feature: Registro de usuario
 
   Como cliente del sistécredito
   Deseo registrarme en la app
