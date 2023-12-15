@@ -14,5 +14,5 @@ Feature: Registro de usuario
 
     Examples: Tabla Registro
     |nombre|correo|password|mensaje|
-    |Reto siste|retosistecredito6@mailsac.com|Asdf1234|¡Revisa tu correo electrónico!|
+    |Chocuair Automati|retosistecredito9@mailsac.com|Asdf1234|¡Revisa tu correo electrónico!|
 
